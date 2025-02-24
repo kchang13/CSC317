@@ -15,7 +15,7 @@
             font-size: 18px;
             text-align: center;
         }
-        hr
+        hr /* dividers */
         {
             width: 15%;
             margin: 20px auto;
@@ -23,7 +23,14 @@
         }
         iframe
         {
-            border: none;
+            height: 250px;
+            width: 25%;
+        }
+        label
+        {
+            text-align: left; /* Align the label text to the left */
+            display: block; /* Ensure labels are block elements (take full width) */
+            margin-bottom: 8px; /* Space between label and input */
         }
         table
         {
@@ -74,6 +81,56 @@
             padding-left: 10px;
             text-align: left;
         }
+        /* Style inputs with type="text", select elements and text areas */
+        input[type=text], select, textarea
+        {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+            background-color: transparent;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit]
+        {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }
+
+        input[type=submit]:hover
+        {
+            background-color: #45a049;
+        }
+
+        .form-wrapper /* wraps the form so the entire thing can be transformed instead of its elements */
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container
+        {
+            width: 25%;
+            padding: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 
@@ -91,6 +148,7 @@
                 <li><a href="#biography">BIOGRAPHY</a></li>
                 <li><a href="#education">EDUCATION</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </div>
@@ -166,40 +224,64 @@
             <tr>
                 <th>POSITION</th>
                 <th>COMPANY</th>
-                <th>DESCRIPTION</th>
+                <th>DATE</th>
             </tr>
             <tr>
                 <td>T2 Customer Service</td>
-                <td>SKN</td>
+                <td>SK Hosting</td>
+                <td>2019-2020</td>
+            </tr>
+            <tr>
+                <td>Specialty Sales</td>
+                <td>Target</td>
+                <td>2021-2022</td>
             </tr>
             <tr>
                 <td>Sales Representative</td>
                 <td>Pacific Bridge</td>
-            </tr>
-            <tr>
-                <td>Specialty Sales (Tech)</td>
-                <td>Target</td>
-            </tr>
-            <tr>
-                <td>CSC 317</td>
-                <td>In progress</td>
+                <td>2020-present</td>
             </tr>
         </table>
         <br><br>
+
+        <iframe src="https://kchang13.github.io/CSC317/assignments/assignment-2/index.html"></iframe>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <hr>
+        <h3>Reach me on campus!</h3>
         <div style="text-align: center;">
             <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.964555713082!2d-122.47881242325768!3d37.72050981528252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7d1fd44d0107%3A0xf15988c755b0d218!2s2%20Varela%20Ave%2C%20San%20Francisco%2C%20CA%2094132!5e0!3m2!1sen!2sus!4v1740354772290!5m2!1sen!2sus"
-                    width="500"
-                    height="300"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
+                    src="https://shorturl.at/bbLa5">
             </iframe>
         </div>
 
+        <h3>Leave me a message!</h3>
+        <div class="form-wrapper"> <!-- Form -->
+            <div class="container">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name...">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email...">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter a subject...">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here..." style="height:250px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+
     </section>
+    <br><br>
 
 </main>
 </body>
-</html>l>
+</html>
