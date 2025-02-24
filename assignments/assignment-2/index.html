@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
     <meta charset="UTF-8">
     <title>Kevin Chang's Portfolio</title>
@@ -15,7 +16,8 @@
             font-size: 18px;
             text-align: center;
         }
-        hr /* dividers */
+        /* Section dividers */
+        hr
         {
             width: 15%;
             margin: 20px auto;
@@ -26,49 +28,54 @@
             height: 250px;
             width: 25%;
         }
+        /* Aligns form labels to the left without moving other elements */
         label
         {
-            text-align: left; /* Align the label text to the left */
-            display: block; /* Ensure labels are block elements (take full width) */
-            margin-bottom: 8px; /* Space between label and input */
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
         }
         table
         {
-            border-collapse: collapse;
             margin: 0 auto;
             width: 25%;
+            border-collapse: collapse; /* Consolidates cell borders */
         }
+        /* Organizes cell content */
         td, th
         {
-            padding: 10px;
             border: 1px solid #ddd;
+            padding: 10px;
             text-align: center;
         }
-        #menu
-        {
-            height: 75px;
-        }
-        ul#horizontal-list
+        ul#nav-menu
         {
             margin: 0;
             padding: 25px 0 0 0;
             list-style: none;
         }
-        ul#horizontal-list li
+        /* Makes the list horizontal with 10px between each item */
+        ul#nav-menu li
         {
             display: inline-block;
             margin: 10px;
         }
-        ul#horizontal-list li a
+        ul#nav-menu li a
         {
             color: white;
             display: inline-block;
             transition: transform 0.2s ease-in-out;
-            text-decoration: none;
+            text-decoration: none; /* Removes the underline */
         }
-        ul#horizontal-list li a:hover
+        /* When hovering over the anchor, dilate it by 10% */
+        ul#nav-menu li a:hover
         {
             transform: scale(1.1);
+        }
+        /* Removes extra bullet points */
+        ul#school-info
+        {
+            list-style: none;
         }
         section
         {
@@ -81,46 +88,36 @@
             padding-left: 10px;
             text-align: left;
         }
-        /* Style inputs with type="text", select elements and text areas */
-        input[type=text], select, textarea
+        /* Input styling */
+        input[type=text], [type=email], textarea
         {
-            width: 100%; /* Full width */
-            padding: 12px; /* Some padding */
-            border: 1px solid #ccc; /* Gray border */
-            border-radius: 4px; /* Rounded borders */
-            box-sizing: border-box; /* Make sure that padding and width stays in place */
-            margin-top: 6px; /* Add a top margin */
-            margin-bottom: 16px; /* Bottom margin */
-            resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-            background-color: transparent;
+            border: 1px solid #ccc;
             color: white;
+            padding: 12px;
+            resize: none; /* Disabled resizing since it distorts the page */
+            width: 100%;
+            background-color: transparent;
+            box-sizing: border-box;
             font-family: 'Montserrat', sans-serif;
             font-size: 12px;
+            margin-bottom: 16px;
+            margin-top: 6px;
         }
-
-        /* Style the submit button with a specific background color etc */
         input[type=submit]
         {
-            background-color: #04AA6D;
+            border: none;
             color: white;
             padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
             cursor: pointer;
+            border-radius: 4px;
+            background-color: #1ca12d;
             font-family: 'Montserrat', sans-serif;
             font-size: 18px;
         }
-
+        /* When hovering over the submit button, change its color */
         input[type=submit]:hover
         {
-            background-color: #45a049;
-        }
-
-        .form-wrapper /* wraps the form so the entire thing can be transformed instead of its elements */
-        {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #22c036;
         }
 
         .container
@@ -131,9 +128,15 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        /* Aligns the entire form to the center */
+        .form-wrapper
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
-
 <body>
 <header>
     <br>
@@ -141,13 +144,15 @@
     <img src="images/pfp.jpg" style="width: 10%;" alt="Kevin Chang's profile picture">
 </header>
 
-<div id="menu">
+<!-- Navigation menu (anchors) -->
+<div>
     <div class="table">
         <nav>
-            <ul id="horizontal-list">
+            <ul id="nav-menu">
                 <li><a href="#biography">BIOGRAPHY</a></li>
                 <li><a href="#education">EDUCATION</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
@@ -157,7 +162,7 @@
 <main>
 
     <section id="biography">
-        <h2>Biography</h2>
+        <h2>BIOGRAPHY</h2>
         <hr>
         <p>
             Hello, my name is Kevin Chang. I was a business major that
@@ -182,17 +187,19 @@
     </section>
 
     <section id="education">
-        <h2>Education</h2>
+        <h2>EDUCATION</h2>
         <hr>
         <ul>
+            <!-- School info nested list -->
             <li>San Francisco State University
-                <ul>
+                <ul id ="school-info">
                     <li>Major: Computer Science</li>
                     <li>Graduation Year: 2026</li>
                 </ul>
             </li>
         </ul>
-        <br>
+        <!-- Relevant classes table -->
+        <h3>Relevant classes</h3>
         <table>
             <tr>
                 <th>CLASS</th>
@@ -218,8 +225,10 @@
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
+        <h2>EXPERIENCE</h2>
         <hr>
+        <h3>Relevant positions</h3>
+        <!-- Work experience table -->
         <table>
             <tr>
                 <th>POSITION</th>
@@ -242,37 +251,50 @@
                 <td>2020-present</td>
             </tr>
         </table>
-        <br><br>
 
-        <iframe src="https://kchang13.github.io/CSC317/assignments/assignment-2/index.html"></iframe>
+    </section>
+
+    <section id="projects">
+        <h2>PROJECTS</h2>
+        <hr>
+        <iframe src="https://kchang13.github.io/CSC317/assignments/assignment-2/index.html"></iframe> <!-- GitHub project 2 preview -->
+        <article>
+            CSC 317 portfolio website project preview
+        </article>
+        <br>
+        <article>
+            <img src="images/mktg431.png" style="width: 25%;" alt="MKTG 431 Zara marketing strategy project">
+            <br>MKTG 431 Zara marketing strategy project
+        </article>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>CONTACT</h2>
         <hr>
         <h3>Reach me on campus!</h3>
-        <div style="text-align: center;">
-            <iframe
-                    src="https://shorturl.at/bbLa5">
-            </iframe>
-        </div>
+        <iframe src="https://shorturl.at/Qc7sa"></iframe> <!-- Google Maps iframe -->
 
         <h3>Leave me a message!</h3>
-        <div class="form-wrapper"> <!-- Form -->
+        <div class="form-wrapper"> <!-- Contact form-->
             <div class="container">
                 <form>
+                    <!-- Name field (required)-->
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name...">
+                    <input type="text" id="name" name="name" placeholder="Enter your name..." required>
 
+                    <!-- Email field (required; must be correct format) -->
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Enter your email...">
+                    <input type="email" id="email" name="email" placeholder="Enter your email..." required>
 
+                    <!-- Subject field (required; 2-100 characters) -->
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Enter a subject...">
+                    <input type="text" id="subject" name="subject" placeholder="Enter a subject..." required minlength="2" maxlength="100">
 
+                    <!-- Message box (required; 20-1,000 characters) -->
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message here..." style="height:250px"></textarea>
+                    <textarea id="message" name="message" placeholder="Enter your message here..." style="height:250px" required minlength="20" maxlength="1000"></textarea>
 
+                    <!-- Submit button -->
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -280,7 +302,13 @@
 
 
     </section>
-    <br><br>
+
+    <footer>
+        <p>
+            kchang13@sfsu.edu
+            <br>&copy; Kevin Chang 2025
+        </p>
+    </footer>
 
 </main>
 </body>
