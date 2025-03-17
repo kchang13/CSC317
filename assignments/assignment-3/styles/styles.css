@@ -15,6 +15,21 @@ hr
     margin: 20px auto;
     width: 15%;
 }
+/* headers */
+h1
+{
+    font-size: 40px;
+    letter-spacing: 1.5px;
+}
+h2
+{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+h3
+{
+    font-size: 20px;
+}
 iframe
 {
     height: 250px;
@@ -80,7 +95,6 @@ section#education ul
     padding-left: 10px;
     text-align: left;
 }
-
 /* Input styling */
 input[type=text], [type=email], textarea
 {
@@ -96,7 +110,6 @@ input[type=text], [type=email], textarea
     margin-bottom: 16px;
     margin-top: 6px;
 }
-
 input[type=submit]
 {
     border: none;
@@ -113,7 +126,6 @@ input[type=submit]:hover
 {
     background-color: #22c036;
 }
-
 .container
 {
     padding: 10px;
@@ -122,11 +134,130 @@ input[type=submit]:hover
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 /* Aligns the entire form to the center */
-.form-wrapper
+.form
 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#mktg
+{
+    width: 24%;
+    height: auto;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px white;
+    margin: 20px auto;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#mktg:hover
+{
+    transform: scale(1.05);
+}
+#pandas
+{
+    width: 24%;
+    height: auto;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px white;
+    margin: 20px auto;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#pandas:hover
+{
+    transform: scale(1.05);
+}
+#pfp
+{
+    width: 10%;
+    height: auto;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px white;
+    margin: 20px auto;
+    animation: bounce 3s ease infinite;
+}
+/* Small phones */
+@media (max-width: 576px)
+{
+    #mktg
+    {
+        width: 30%;
+    }
+    #pandas
+    {
+        width: 30%;
+    }
+    #pfp
+    {
+        width: 25%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px)
+{
+    #mktg
+    {
+        width: 28%;
+    }
+    #pandas
+    {
+        width: 28%;
+    }
+    #pfp
+    {
+        width: 20%;
+    }
+}
+
+/* Laptops */
+@media (max-width: 992px)
+{
+    #mktg
+    {
+        width: 26%;
+    }
+    #pandas
+    {
+        width: 26%;
+    }
+    #pfp
+    {
+        width: 15%;
+    }
+}
+
+/* Desktops */
+@media (max-width: 1200px)
+{
+    #mktg
+    {
+        width: 24%;
+    }
+    #pandas
+    {
+        width: 24%;
+    }
+    #pfp
+    {
+        width: 10%;
+    }
+}
+@keyframes bounce
+{
+    0%
+    {
+        transform: translateY(0);
+    }
+    50%
+    {
+        transform: translateY(-10px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
 }
