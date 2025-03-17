@@ -2,7 +2,7 @@ body
 {
     color: white;
     background-attachment: fixed;
-    background-image: url('images/bg.png');
+    background-image: url('../images/bg.png');
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
