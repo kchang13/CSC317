@@ -1,0 +1,132 @@
+body
+{
+    color: white;
+    background-attachment: fixed;
+    background-image: url('images/bg.png');
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+/* Section dividers */
+hr
+{
+    border: 2px solid white;
+    margin: 20px auto;
+    width: 15%;
+}
+iframe
+{
+    height: 250px;
+    width: 25%;
+}
+/* Aligns form labels to the left without moving other elements */
+label
+{
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+table
+{
+    margin: 0 auto;
+    width: 25%;
+    border-collapse: collapse; /* Consolidates cell borders */
+}
+/* Organizes cell content */
+td, th
+{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+ul#nav-menu
+{
+    margin: 0;
+    padding: 25px 0 0 0;
+    list-style: none;
+}
+/* Makes the list horizontal with 10px between each item */
+ul#nav-menu li
+{
+    display: inline-block;
+    margin: 10px;
+}
+ul#nav-menu li a
+{
+    color: white;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+    text-decoration: none; /* Removes the underline */
+}
+/* When hovering over the anchor, dilate it by 10% */
+ul#nav-menu li a:hover
+{
+    transform: scale(1.1);
+}
+/* Removes extra bullet points */
+ul#school-info
+{
+    list-style: none;
+}
+section
+{
+    text-align: center;
+}
+section#education ul
+{
+    display: table;
+    margin: 0 auto;
+    padding-left: 10px;
+    text-align: left;
+}
+
+/* Input styling */
+input[type=text], [type=email], textarea
+{
+    border: 1px solid #ccc;
+    color: white;
+    padding: 12px;
+    resize: none; /* Disabled resizing since it distorts the page */
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    margin-bottom: 16px;
+    margin-top: 6px;
+}
+
+input[type=submit]
+{
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: #1ca12d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+/* When hovering over the submit button, change its color */
+input[type=submit]:hover
+{
+    background-color: #22c036;
+}
+
+.container
+{
+    padding: 10px;
+    width: 25%;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Aligns the entire form to the center */
+.form-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
