@@ -1,4 +1,4 @@
-# CSC 317 Assignment 2 Submission
+# CSC 317 Assignment 4 Submission
 
 **Name:** Kevin Chang
 **Student ID:** 922123914 
@@ -11,6 +11,8 @@ https://kchang13.github.io/CSC317/assignments/assignment-4/calculator.html
 
 ## Comments
 I originally tried using <button> but messed it up. I understand parts of it might be inefficient and would like some feedback on it.
+
+It turns out Apple uses custom icons for their calculator symbols, so I used some special unicode characters to try and match the aesthetic.
 
 The calculator looks giant when accessing it from Github Pages but looks fine when dropped into a browser. I'm not sure why.
 
