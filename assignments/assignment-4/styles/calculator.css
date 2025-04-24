@@ -10,7 +10,7 @@ body
     width: clamp(32rem, 90vw, 64rem);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 #calculation
