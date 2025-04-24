@@ -7,10 +7,11 @@
 
 ## Github Pages links
 https://kchang13.github.io/CSC317/assignments/assignment-4/index.html
+
 https://kchang13.github.io/CSC317/assignments/assignment-4/calculator.html
 
 ## Comments
-I originally tried using <button> but messed it up. I understand parts of it might be inefficient and would like some feedback on it.
+I originally tried using button but messed it up. I understand parts of it might be inefficient and would like some feedback on it.
 
 It turns out Apple uses custom icons for their calculator symbols, so I used some special unicode characters to try and match the aesthetic.
 
