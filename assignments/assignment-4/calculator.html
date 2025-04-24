@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/calculator.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <script src="scripts/calculator.js" defer></script>
+</head>
+
+<body>
+    <form id="calculator">
+        <!-- Display -->
+        <input type="text" name="calculation" id="calculation" disabled>
+        <input type="text" name="display" id="display" disabled>
+
+        <!-- Row 1 -->
+        <input type="button" id="clear" class="special" value="AC" onclick="ac()">
+        <input type="button" id="invert" class="special" value="±" onclick="invertSign()">
+        <input type="button" id="percent" class="special" value="﹪" data-value="%" onclick="percentage()">
+        <input type="button" id="divide" class="operator" value="÷" data-value="/" onclick="sendValue(this.dataset.value)">
+
+        <!-- Row 2 -->
+        <input type="button" id="seven" class="number" value="7" onclick="sendValue(this.value)">
+        <input type="button" id="eight" class="number" value="8" onclick="sendValue(this.value)">
+        <input type="button" id="nine" class="number" value="9" onclick="sendValue(this.value)">
+        <input type="button" id="multiply" class="operator" value="×" data-value="*" onclick="sendValue(this.dataset.value)">
+
+        <!-- Row 3 -->
+        <input type="button" id="four" class="number" value="4" onclick="sendValue(this.value)">
+        <input type="button" id="five" class="number" value="5" onclick="sendValue(this.value)">
+        <input type="button" id="six" class="number" value="6" onclick="sendValue(this.value)">
+        <input type="button" id="subtract" class="operator" value="−" data-value="-" onclick="sendValue(this.dataset.value)">
+
+        <!-- Row 4 -->
+        <input type="button" id="one" class="number" value="1" onclick="sendValue(this.value)">
+        <input type="button" id="two" class="number" value="2" onclick="sendValue(this.value)">
+        <input type="button" id="three" class="number" value="3" onclick="sendValue(this.value)">
+        <input type="button" id="add" class="operator" value="+" onclick="sendValue(this.value)">
+
+        <!-- Row 5 -->
+        <input type="button" id="back" class="special" value="↩" onclick="window.location.href='index.html'">
+        <input type="button" id="zero" class="number" value="0" onclick="sendValue(this.value)">
+        <input type="button" id="decimal" class="number" value="." onclick="sendValue(this.value)">
+        <input type="button" id="equal" class="operator" value="=" onclick="calculate()">
+    </form>
+</body>
+
+<!--
+
+1. Some operators (line 23, 29, and 35) also use data-value because value was used to display a special unicode counterpart.
+2. iOS uses the bottom-left button for switching between basic & scientific, so I replaced it with a back button.
+3. I was trying to match it perfectly to the iOS calculator and kept breaking things. Apologies for the late submission.
+
+-->

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <title>Kevin Chang's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+    <br>
+    <h1>KEVIN CHANG</h1>
+    <img src="images/pfp.jpg" id="pfp" alt="Kevin Chang's profile picture">
+</header>
+
+<!-- Navigation menu (anchors) -->
+<div>
+    <div class="table">
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#biography">BIOGRAPHY</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<main>
+
+    <section id="biography">
+        <h2>BIOGRAPHY</h2>
+        <hr>
+        <p>
+            Hello, my name is Kevin Chang. I was a business major that
+            <br>switched to CS this year to expand my career into IT.
+            <br>
+            <br>I came here from southern California, but I was originally from
+            <br>Sichuan, China. The province is known for its signature spicy
+            <br>food and as the home of the giant pandas.
+        </p>
+        <figure>
+            <img src="images/pandas.jpg" id="pandas" alt="Giant pandas">
+        </figure>
+        <p>
+            I work in an old school sales industry where our potential
+            <br>is being limited by the hesitancy to adopt modern IT
+            <br>solutions. I aim to change this and show that satisfied
+            <br>customers don't need a human at every step of the way.
+            <br>
+            <br>This is my busiest year yet. Where I lack in experience,
+            <br>I will make up for in effort.
+        </p>
+    </section>
+
+    <section id="education">
+        <h2>EDUCATION</h2>
+        <hr>
+        <ul>
+            <!-- School info nested list -->
+            <li>San Francisco State University
+                <ul id ="school-info">
+                    <li>Major: Computer Science</li>
+                    <li>Graduation Year: 2026</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Relevant classes table -->
+        <h3>CLASSES</h3>
+        <table>
+            <tr>
+                <th>CLASS</th>
+                <th>STATUS</th>
+            </tr>
+            <tr>
+                <td>CSC 210</td>
+                <td>Complete</td>
+            </tr>
+            <tr>
+                <td>CSC 220</td>
+                <td>In progress</td>
+            </tr>
+            <tr>
+                <td>CSC 300</td>
+                <td>In progress</td>
+            </tr>
+            <tr>
+                <td>CSC 317</td>
+                <td>In progress</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="experience">
+        <h2>EXPERIENCE</h2>
+        <hr>
+        <h3>POSITIONS</h3>
+        <!-- Work experience table -->
+        <table>
+            <tr>
+                <th>POSITION</th>
+                <th>COMPANY</th>
+                <th>DATE</th>
+            </tr>
+            <tr>
+                <td>T2 Customer Service</td>
+                <td>SK Hosting</td>
+                <td>2019-2020</td>
+            </tr>
+            <tr>
+                <td>Specialty Sales</td>
+                <td>Target</td>
+                <td>2021-2022</td>
+            </tr>
+            <tr>
+                <td>Sales Representative</td>
+                <td>Pacific Bridge</td>
+                <td>2020-present</td>
+            </tr>
+        </table>
+
+    </section>
+
+    <section id="projects">
+        <h2>PROJECTS</h2>
+        <hr>
+        <iframe src="https://kchang13.github.io/CSC317/assignments/assignment-3/index.html"></iframe> <!-- GitHub project 3 preview -->
+        <article>
+            CSC 317 portfolio website project preview
+        </article>
+        <br>
+        <article>
+            <img src="images/mktg431.png" id="mktg" alt="MKTG 431 Zara marketing strategy project">
+            <br>MKTG 431 Zara marketing strategy project
+        </article>
+        <br>
+        <article>
+            <a href="calculator.html" target="_blank">
+                <img src="images/calculator.png" id="calculator" alt="Calculator App">
+            </a>
+            <br><br>CSC 317 iOS calculator app
+        </article>
+    </section>
+
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <hr>
+        <h3>Reach me on campus!</h3>
+        <iframe src="https://shorturl.at/Qc7sa"></iframe> <!-- Google Maps iframe -->
+
+        <h3>Leave me a message!</h3>
+        <div class="form"> <!-- Contact form-->
+            <div class="container">
+                <form>
+                    <!-- Name field (required)-->
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+
+                    <!-- Email field (required; must be correct format) -->
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+
+                    <!-- Subject field (required; 2-100 characters) -->
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter a subject..." required minlength="2" maxlength="100">
+
+                    <!-- Message box (required; 20-1,000 characters) -->
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Enter your message here..." style="height:250px" required minlength="20" maxlength="1000"></textarea>
+
+                    <!-- Submit button -->
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>
+            kchang13@sfsu.edu
+            <br>&copy; Kevin Chang 2025
+        </p>
+    </footer>
+
+</main>
+</body>
+</html>
