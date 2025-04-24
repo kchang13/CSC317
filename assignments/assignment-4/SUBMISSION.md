@@ -3,15 +3,17 @@
 **Name:** Kevin Chang
 **Student ID:** 922123914 
 **GitHub Username:** kchang13  
-**Assignment Number:** 3
+**Assignment Number:** 4
 
-# Portfolio Styling Assignment Analysis
+## Github Pages links
+https://kchang13.github.io/CSC317/assignments/assignment-4/index.html
+https://kchang13.github.io/CSC317/assignments/assignment-4/calculator.html
 
-## Analysis
-Certain parts of the AI websites look crooked and unpolished. I don't think it can find a combination of colors that are easy on the eyes and pleasant to look at. However, the code looks alot neater than compact than mine.
+## Comments
+I originally tried using <button> but messed it up. I understand parts of it might be inefficient and would like some feedback on it.
 
-## Lessons Learned
-I didn't know the AI can generate complete, working websites. It can be used to quickly see what my own content will look like superimposed on websites/templates I like.
+The calculator looks giant when accessing it from Github Pages but looks fine when dropped into a browser. I'm not sure why.
 
-## Preferred Version
-I can't say I have a preferred version, because I did poorly on this assignment. I was busy at work these past few weeks as I was refused a schedule adjustment. I will re-do this assignment separately as practice. I apologize, This won't happen again.
+I wasn't able to use the extra time as I was unavailable from 4/17 to 4/20 for a business trip and associated overtime. The recent tariffs have seriously affected my job.
+
+Apologies for the late submission.
