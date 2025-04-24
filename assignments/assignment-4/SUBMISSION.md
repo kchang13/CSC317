@@ -1,8 +1,11 @@
 # CSC 317 Assignment 4 Submission
 
 **Name:** Kevin Chang
+
 **Student ID:** 922123914 
+
 **GitHub Username:** kchang13  
+
 **Assignment Number:** 4
 
 ## Github Pages links
